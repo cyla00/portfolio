@@ -10,6 +10,21 @@
   font-family: Azonix;
   src: url("./fonts/Azonix.otf");
 }
+@font-face {
+  font-family: NoirMed;
+  src: url("./fonts/noirmed.otf");
+}
+@font-face {
+  font-family: Noir;
+  src: url("./fonts/noir.otf");
+}
+
+#sezione_alta{
+  display: inline-flex;
+}
+
+/* ############################### */
+
 
 body{
   background-image: url("./temps/fondo.jpg");
@@ -17,44 +32,40 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: grid;
 }
-
-#div_contatti{
-  margin: 3%;
-  column-count: 1;
+#sezione_alta{
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-column-gap: none;
 }
-.alignamento_icone{
-  width: 12%;
-  display: inline-flex;
-  padding: 0.1%;
-  border-radius: 5px;
+.contenitore_icone{
+  width: 3.5vw;
+  border-radius: 10%;
+}
+.contenitore_icone:hover{
   background-color: rgba(45, 35, 34, 0.5);
-  box-shadow: 5px 5px 10px #000000;
-}
-.alignamento_icone:hover{
-  background-color: rgba(14, 14, 14, 0.5);
-  color: #FFFFFF;
   transition: 0.1s;
 }
-.alignamento_icone:active{
-  background-color: rgba(161, 111, 112, 0.7);
+.contenitore_icone:active{
+  background-color: rgba(255, 153, 0, 0.5);
 }
-.titolo_icona_scomparsa{
-  font-family: PierBold;
-  font-size: 1.1vw;
-  color: #000000;
-  align-items: center;
-  margin: auto;
+#icons img{
+  margin: 3%;
+  padding: 3%;
+  display:table-column;
+  width: 3vw;
 }
-.titolo_icona_contatto{
-  margin: auto;
-  color: #a16f70;
+#paragrafo_centrale{
+  padding: 3%;
+  text-align: center;
+  color: #ababab;
+  font-family: NoirMed;
 }
-.icone_contatti{
-  width: 2vw;
-  margin-right: 10px !important;
-}
-#icona_centrale{
-  margin-top: 1%;
-  margin-bottom: 1%;
+#paragrafo_nome{
+  padding: 3%;
+  text-align: right;
+  color: #ababab;
+  font-family: NoirMed;
 }

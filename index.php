@@ -6,42 +6,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- SEZIONE CONTATTI -->
-    <div id="div_contatti">
 
-      <div class="contenitore_contatti">
-        <div class="alignamento_icone">
-          <div class="contatto">
-            <img class="icone_contatti" src="./img/linkedin.png" alt="">
-          </div>
-          <div class="titolo_icona_scomparsa">
-            <a href="https://www.linkedin.com/in/ismail-khayam/" class="titolo_icona_contatto" style="text-decoration: none;">LinekdIn</a>
-          </div>
+    <div id="sezione_alta">
+      <div id="icons">
+        <div class="contenitore_icone">
+          <a href=""><img src="./img/linkedin.png" alt="linkedin"></a>
+        </div>
+        <div class="contenitore_icone">
+          <a href=""><img src="./img/github.png" alt="github"></a>
+        </div>
+        <div class="contenitore_icone">
+          <a href=""><img src="./img/email.png" alt="email"></a>
         </div>
       </div>
-
-      <div class="contenitore_contatti">
-        <div id="icona_centrale" class="alignamento_icone">
-          <div class="contatto">
-            <img class="icone_contatti" src="./img/github.png" alt="">
-          </div>
-          <div class="titolo_icona_scomparsa">
-            <a href="https://github.com/cyla00" class="titolo_icona_contatto" style="text-decoration: none;">GitHub</a>
-          </div>
-        </div>
+      <div id="paragrafo_centrale">
+        <h1>Hi! Im aweb developer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
       </div>
-
-      <div class="contenitore_contatti">
-        <div class="alignamento_icone">
-          <div class="contatto">
-            <img class="icone_contatti" src="./img/email.png" alt="">
-          </div>
-          <div class="titolo_icona_scomparsa">
-            <a href="https://github.com/cyla00" class="titolo_icona_contatto" style="text-decoration: none;">Mail</a>
-          </div>
-        </div>
+      <div id="paragrafo_nome">
+        <h1>ISMAIL KHAYAM</h1>
+        <p>Portfolio</p>
       </div>
-
     </div>
+
+
+
+
+
+
   </body>
 </html>
