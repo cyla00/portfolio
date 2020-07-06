@@ -1,0 +1,60 @@
+@font-face {
+  font-family: PierBold;
+  src: url("./fonts/pierBold.otf");
+}
+@font-face {
+  font-family: PierNorm;
+  src: url("./fonts/pierNorm.otf");
+}
+@font-face {
+  font-family: Azonix;
+  src: url("./fonts/Azonix.otf");
+}
+
+body{
+  background-image: url("./temps/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#div_contatti{
+  margin: 3%;
+  column-count: 1;
+}
+.alignamento_icone{
+  width: 12%;
+  display: inline-flex;
+  padding: 0.1%;
+  border-radius: 5px;
+  background-color: rgba(45, 35, 34, 0.5);
+  box-shadow: 5px 5px 10px #000000;
+}
+.alignamento_icone:hover{
+  background-color: rgba(14, 14, 14, 0.5);
+  color: #FFFFFF;
+  transition: 0.1s;
+}
+.alignamento_icone:active{
+  background-color: rgba(161, 111, 112, 0.7);
+}
+.titolo_icona_scomparsa{
+  font-family: PierBold;
+  font-size: 1.1vw;
+  color: #000000;
+  align-items: center;
+  margin: auto;
+}
+.titolo_icona_contatto{
+  margin: auto;
+  color: #a16f70;
+}
+.icone_contatti{
+  width: 2vw;
+  margin-right: 10px !important;
+}
+#icona_centrale{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
