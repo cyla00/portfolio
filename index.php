@@ -22,7 +22,7 @@
 
     <div id="sezione_centrale">
 
-      <?php require("settore_laptop.php") ?>
+      <?php require("settore_slider.php") ?>
 
     </div>
 

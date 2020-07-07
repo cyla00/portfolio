@@ -50,9 +50,10 @@ body{
   padding: 1%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 100%;
 }
 .contenitore_icone{
-  width: 4.5vw;
+  width: 3.5vw;
   border-radius: 10%;
 }
 .contenitore_icone:hover{
@@ -66,7 +67,7 @@ body{
   margin: 3%;
   padding: 3%;
   display:table-column;
-  width: 4vw;
+  width: 3vw;
 }
 #paragrafo_centrale{
   padding: 3%;
@@ -84,13 +85,16 @@ body{
   font-family: NoirMed;
 }
 #sezione_centrale{
-  margin-top: 5vh;
   padding: 1%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 100%;
 }
-.immagine_laptop{
+.immagine_slider{
+  border-radius: 5px;
+  display: flex;
   text-align: center;
+  overflow: hidden;
 }
 #laptop{
   width: 50vw;
@@ -112,6 +116,7 @@ body{
 }
 .container_bottone{
   text-align: center;
+  margin: auto;
 }
 .immagine_bottone{
   width: 2vw;
