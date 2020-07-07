@@ -19,10 +19,6 @@
   src: url("./fonts/noir.otf");
 }
 
-#sezione_alta{
-  display: inline-flex;
-}
-
 /* ############################### */
 
 
@@ -38,10 +34,9 @@ body{
   padding: 1%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-column-gap: none;
 }
 .contenitore_icone{
-  width: 3.5vw;
+  width: 4.5vw;
   border-radius: 10%;
 }
 .contenitore_icone:hover{
@@ -55,7 +50,7 @@ body{
   margin: 3%;
   padding: 3%;
   display:table-column;
-  width: 3vw;
+  width: 4vw;
 }
 #paragrafo_centrale{
   padding: 3%;
@@ -63,9 +58,45 @@ body{
   color: #ababab;
   font-family: NoirMed;
 }
+#paragrafo_centrale p{
+  font-size: 2vh;
+}
 #paragrafo_nome{
   padding: 3%;
   text-align: right;
   color: #ababab;
   font-family: NoirMed;
+}
+#sezione_centrale{
+  margin-top: 10vh;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.immagine_laptop{
+  text-align: center;
+}
+#laptop{
+  width: 50vw;
+}
+.bottone{
+  padding: 2%;
+  border-radius: 10%;
+  background-color: rgba(217, 217, 217, 0.3);
+  border: none;
+  outline: none;
+}
+.bottone:hover{
+  background-color: rgba(217, 217, 217, 0.5);
+  transition: 0.1s;
+}
+.bottone:active{
+  background-color: rgba(255, 153, 0, 0.6);
+  transition: 0.1s;
+}
+.container_bottone{
+  text-align: center;
+}
+.immagine_bottone{
+  width: 2vw;
 }
