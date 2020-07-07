@@ -20,7 +20,23 @@
 }
 
 /* ############################### */
+/* TEMP_BLOG.PHP */
 
+#blog{
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 7% 73% 20%;
+}
+.sfondo_blog{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* ############################### */
+/* INDEX.PHP */
 
 body{
   background-image: url("./temps/fondo.jpg");
@@ -68,7 +84,7 @@ body{
   font-family: NoirMed;
 }
 #sezione_centrale{
-  margin-top: 10vh;
+  margin-top: 5vh;
   padding: 1%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
