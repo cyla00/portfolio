@@ -4,9 +4,10 @@
   </div>
 </div>
 <div class="immagine_slider">
-  <img id="laptop" src="./temps/INTROpg.jpg" alt="">
-  <img id="laptop" src="./temps/fondo.jpg" alt="">
-  <img id="laptop" src="./temps/CONTENTpg.jpg" alt="">
+  <img class="slider_img" src="./projects/rsz_reworkboot.png" alt="">
+  <img class="slider_img" src="./projects/rsz_bomberman.png" alt="">
+  <img class="slider_img" src="./projects/resized_bike.png" alt="">
+  <img class="slider_img" src="./projects/rsz_explorer.png" alt="">
 </div>
 <div class="container_bottone">
   <div class="btn">

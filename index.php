@@ -26,8 +26,25 @@
 
     </div>
 
+    <div class="info_slider">
+      <div class="vuoto">
+      </div>
+      <div id="nero">
+        <div id="nero_titolo">
+          <h3>TITOLO</h3>
+        </div>
+        <div id="nero_immagini">
+          <img class="nero_icona" src="./icons/php.png" alt="">
+          <img class="nero_icona" src="./icons/html-5.png" alt="">
+          <img class="nero_icona" src="./icons/css.png" alt="">
+          <img class="nero_icona" src="./icons/javascript.png" alt="">
+        </div>
+      </div>
+      <div class="vuoto">
+      </div>
+    </div>
 
-
+    <?php require("settore_form.php") ?>
 
   </body>
 </html>

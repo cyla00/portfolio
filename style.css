@@ -87,7 +87,7 @@ body{
 #sezione_centrale{
   padding: 1%;
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 30% 40% 30%;
   grid-template-rows: 100%;
 }
 .immagine_slider{
@@ -96,8 +96,9 @@ body{
   text-align: center;
   overflow: hidden;
 }
-#laptop{
-  width: 50vw;
+.slider_img{
+  border: 5px solid 	#090909;
+  width: 40vw;
 }
 .bottone{
   padding: 2%;
@@ -120,4 +121,63 @@ body{
 }
 .immagine_bottone{
   width: 2vw;
+}
+.info_slider{
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 100%;
+}
+#nero{
+  grid-template-rows: 50% 50%;
+  border-radius: 5px;
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#nero_titolo{
+  text-align: center;
+}
+#nero_titolo h3{
+  font-family: PierBold;
+  color: #a16f70;
+}
+#nero_immagini{
+  text-align: center;
+}
+.nero_icona{
+  margin: 2%;
+  width: 2.5vw;
+}
+#settore_form{
+  padding: 10%;
+}
+#email_form{
+  display: grid;
+  grid-template-rows: 10% 10% 80%;
+  padding: 7%;
+  border-radius: 5px;
+  margin-top: 8vh;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.contenitore_forms{
+  text-align: left;
+}
+.input_info{
+  margin-bottom: 5vh;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  border-bottom: 3px solid rgba(217, 217, 217, 0.5);
+  font-size: 3vh;
+  color: white;
+  outline: none;
+}
+.form_span{
+  color: rgba(217, 217, 217, 0.5);
+  font-family: PierBold;
+  font-size: 3vh;
 }
