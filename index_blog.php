@@ -11,19 +11,5 @@
     require("connex.php");
      ?>
 
-     
-    <?php
-    $estrazione_tabelle = mysqli_query($connessione, "SELECT * FROM blog_portfolio");
-    if(!$estrazione_tabelle){
-      mysqli_error($connessione);
-    }
-
-      while($tabelle = mysqli_fetch_array($estrazione_tabelle)){
-        echo "<h1 class=titolo_blog>" . $tabelle['tech'] . "</h1>";
-      }
-
-
-     ?>
-
   </body>
 </html>

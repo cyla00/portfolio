@@ -7,29 +7,43 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <?php
-    require("connex.php");
 
-    if(!(empty($_POST["invio"]))){
-
-      $id = "";
-      $titolo = $_POST['titolo_blog'];
-      $file = $_POST['myfile'];
-      $descrizione = $_POST['descrizione'];
-      $tecnologie = $_POST['tecnologie'];
-
-      $push = "INSERT INTO blog_portfolio(id, titolo, img, descrizione, tecnologie) VALUES ('$id, $titolo, $file, $descrizione, $tecnologie')";
-
-      if(mysqli_query($connessione, $push)){
-        echo "push riuscito";
-      }
-      else{
-        echo "errore" . mysqli_error($connessione);
-      }
-    }
-     ?>
 
      <div class="form_inserzione">
+       <?php
+       require("connex.php");
+       require("estrax.php");
+
+       if(!empty($_POST["invio"])){
+         if($connessione or $connessione->error){
+            echo "errore: " . $connessione->error;
+            return;
+         }
+
+
+         $elementi_blog = [
+           "id" => NULL,
+           "titolo" => $_POST['titolo_blog'],
+           "file" => $_POST['myfile'],
+           "descrizione" => $_POST['descrizione'],
+           "tecnologie" => $_POST['tecnologie'],
+         ];
+
+
+         if($elementi_blog and $connessione){
+           $push = "INSERT INTO blog_portfolio (id, titolo, img, descrizione, tech) VALUES ($elementi_blog[id], $elementi_blog[titolo], $elementi_blog[file], $elementi_blog[descrizione], $elementi_blog[tecnologie])";
+
+           if($push){
+             echo "<p>" . "elemento aggiunto con successo" . "</p>";
+           }
+           else{
+             echo "errore: " . $push->error;
+           }
+         }
+       }
+       $connessione->close();
+        ?>
+
        <form class="" action="index_inserzione.php" method="post">
 
          <p>
@@ -56,8 +70,6 @@
 
          <input type="submit" value="Submit" name="invio">
        </form>
-
-
      </div>
 
 
