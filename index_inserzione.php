@@ -10,38 +10,51 @@
     <?php
     require("connex.php");
 
-    $titolo = $_REQUEST ['titolo_blog'];
-    $file = $_REQUEST['myfile'];
-    $descrizione = $_REQUEST['descrizione'];
-    $tecnologie = $_REQUEST['tecnologie'];
+    if(!(empty($_POST["invio"]))){
 
-    $push = "INSERT INTO blog_portfolio(titolo, img, descrizione, tecnologie) VALUES ('$titolo, $file, $descrizione, $tecnologie')";
+      $id = "";
+      $titolo = $_POST['titolo_blog'];
+      $file = $_POST['myfile'];
+      $descrizione = $_POST['descrizione'];
+      $tecnologie = $_POST['tecnologie'];
 
-    if(mysqli_query($connessione, $push)){
-      echo "push riuscito";
-    }
-    else{
-      echo "errore" . mysqli_error($connessione);
+      $push = "INSERT INTO blog_portfolio(id, titolo, img, descrizione, tecnologie) VALUES ('$id, $titolo, $file, $descrizione, $tecnologie')";
+
+      if(mysqli_query($connessione, $push)){
+        echo "push riuscito";
+      }
+      else{
+        echo "errore" . mysqli_error($connessione);
+      }
     }
      ?>
 
      <div class="form_inserzione">
-       <form class="" action="index_inserzione.php" method="get">
-         <label for="titolo_blog">choose a title</label>
-         <input id="titolo_blog" type="text" name="titolo_blog" value="">
+       <form class="" action="index_inserzione.php" method="post">
 
-         <label for="myfile">Select a file:</label>
-         <input id="myfile" type="file" name="myfile">
+         <p>
+           <label for="titolo_blog">choose a title</label>
+           <input id="titolo_blog" type="text" name="titolo_blog" value="">
+         </p>
 
-         <label for="descrizione">choose a description</label>
-         <input id="descrizione" type="text" name="descrizione" value="">
+         <p>
+           <label for="myfile">Select a file:</label>
+           <input id="myfile" type="file" name="myfile">
+         </p>
+
+         <p>
+           <label for="descrizione">choose a description</label>
+           <input id="descrizione" type="text" name="descrizione" value="">
+         </p>
 
          <h3 id="titolo_blog_tecnologie">Technologies</h3>
 
-         <label for="tecnologie">technology used</label>
-         <input id="tecnologie" type="text" name="tecnologie" value="">
+         <p>
+           <label for="tecnologie">technology used</label>
+           <input id="tecnologie" type="text" name="tecnologie" value="">
+         </p>
 
-         <input type="submit" value="Submit">
+         <input type="submit" value="Submit" name="invio">
        </form>
 
 
