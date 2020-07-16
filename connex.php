@@ -4,14 +4,9 @@ $db_username = "root";
 $db_password = "";
 $db_name = "portfolio";
 
-$connessione = mysqli_connect($db_hostname, $db_username, $db_password, $db_name);
-if($connessione->connect_error){
-  die("errore di connessione database: " . $connessione->connect_error);
-}
+$dsn = 'mysql:dbname=portfolio;host=localhost;charset=utf8';
+$connection = new \PDO($dsn, $db_username, $db_password);
 
-  $estrazione_tabelle = mysqli_query($connessione, "SELECT titolo, img, descrizione, tech FROM blog_portfolio");
-  if(!$estrazione_tabelle){
-    mysqli_error($connessione);
-  }
-
+$connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+$connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
  ?>

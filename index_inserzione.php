@@ -24,15 +24,21 @@
          ];
 
           $nomeFile = $_FILES['immagine']['name'];
-          $tipoFile = $_FILES['immagine']['type'];
+          $tipoImg = $_FILES['immagine']['type'];
           $grandezzaFile = $_FILES['immagine']['size'];
           $posizioneFile = $_FILES['immagine']['tmp_name'];
           $erroreFile = $_FILES['immagine']['error'];
           $estensioneFile = explode(".", $nomeFile);
+          $cartella_img = "project_img/";
+          $directory_immagine_completa = $cartella_img . $nomeFile;
+          $erroreOK = 1;
+          $tipoFile = pathinfo($$directory_immagine_completa, PATHINFO_EXTENSION);
 
-         $table = "blog_portfolio";
+          $immagine = basename($nomeFile . $tipoImg);
 
-           if (!$connessione->query("INSERT INTO $table (id, titolo, img, descrizione, tech) VALUES ($elementi_blog[id], $elementi_blog[titolo], $elementi_blog[file], $elementi_blog[descrizione], $elementi_blog[tecnologie])")) {
+          $table = "blog_portfolio";
+
+           if (!$connessione->query("INSERT INTO $table (id, titolo, img, descrizione, tech) VALUES ('$elementi_blog[id]', '$elementi_blog[titolo]', '$immagine','$elementi_blog[descrizione]', '$elementi_blog[tecnologie]')")) {
              echo "Errore della query: " . $connessione->error;
            }else{
              echo "Inserimenti effettuati correttamente.";
@@ -55,7 +61,7 @@
 
          <p>
            <label for="descrizione">||Descrizione||</label>
-           <input id="descrizione" type="text" name="descrizione" value="">
+           <textarea id="area_descrizione" name="descrizione" rows="8" cols="80"></textarea>
          </p>
 
          <p>
