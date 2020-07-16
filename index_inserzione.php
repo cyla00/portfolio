@@ -18,7 +18,7 @@
          </p>
          <p>
            <label for="immagine">||Aggiungi un immagine del tuo progetto||</label>
-           <input id="immagine" type='file' name='img'>
+           <input id="immagine" type='file' name='immagine'>
          </p>
          <p>
            <label for="descrizione">||Descrizione||</label>
@@ -30,7 +30,7 @@
          </p>
          <input type="submit" value="rilascia" name="invia">
          <?php
-         require("connex.php");
+         require("push.php");
           ?>
        </form>
 
