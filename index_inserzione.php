@@ -10,67 +10,30 @@
 
 
      <div class="form_inserzione">
-       <?php
-       require("connex.php");
-
-       if(isset($_POST["carica"])){
-
-         $elementi_blog = [
-           "id" => NULL,
-           "titolo" => $_POST['titolo_blog'],
-           "file" => $_FILES['immagine'],
-           "descrizione" => $_POST['descrizione'],
-           "tecnologie" => $_POST['tecnologie'],
-         ];
-
-          $nomeFile = $_FILES['immagine']['name'];
-          $tipoImg = $_FILES['immagine']['type'];
-          $grandezzaFile = $_FILES['immagine']['size'];
-          $posizioneFile = $_FILES['immagine']['tmp_name'];
-          $erroreFile = $_FILES['immagine']['error'];
-          $estensioneFile = explode(".", $nomeFile);
-          $cartella_img = "project_img/";
-          $directory_immagine_completa = $cartella_img . $nomeFile;
-          $erroreOK = 1;
-          $tipoFile = pathinfo($$directory_immagine_completa, PATHINFO_EXTENSION);
-
-          $immagine = basename($nomeFile . $tipoImg);
-
-          $table = "blog_portfolio";
-
-           if (!$connessione->query("INSERT INTO $table (id, titolo, img, descrizione, tech) VALUES ('$elementi_blog[id]', '$elementi_blog[titolo]', '$immagine','$elementi_blog[descrizione]', '$elementi_blog[tecnologie]')")) {
-             echo "Errore della query: " . $connessione->error;
-           }else{
-             echo "Inserimenti effettuati correttamente.";
-           }
-           $connessione->close();
-         }
-        ?>
 
        <form class="" action="index_inserzione.php" method="POST" enctype="multipart/form-data">
-
          <p>
            <label for="titolo_blog">||Scegli un titolo||</label>
            <input id="titolo_blog" type="text" name="titolo_blog" value="">
          </p>
-
          <p>
            <label for="immagine">||Aggiungi un immagine del tuo progetto||</label>
-           <input id="immagine" type='file' name='immagine'>
+           <input id="immagine" type='file' name='img'>
          </p>
-
          <p>
            <label for="descrizione">||Descrizione||</label>
            <textarea id="area_descrizione" name="descrizione" rows="8" cols="80"></textarea>
          </p>
-
          <p>
            <label for="tecnologie">||Tecnologie usate in questo progetto||</label>
            <input id="tecnologie" type="text" name="tecnologie" value="">
          </p>
-
-         <input type="submit" value="invia" name="invia">
+         <input type="submit" value="rilascia" name="invia">
+         <?php
+         require("connex.php");
+          ?>
        </form>
+
      </div>
 
 

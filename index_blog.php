@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <?php
-    require("connex.php");
-     ?>
 
   </body>
 </html>
