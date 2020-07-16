@@ -7,14 +7,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-<?php
-require("connex.php");
- ?>
 
     <div id="sezione_alta">
-      <?php
-require ("settore_blog.php");
-       ?>
     </div>
 
 
