@@ -11,6 +11,9 @@
     require("settore_header.php");
      ?>
 
+     <div id="titolo_register">
+       <h1>Registrati</h1>
+     </div>
 
     <div class="form_registrazione">
       <?php
@@ -54,20 +57,20 @@
        ?>
       <form class="registrazione" action="register.php" method="post">
         <p>
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" value="">
+          <label id="label_nome" for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" value="">
         </p>
 
         <p>
-          <label for="email">Email</label>
-          <input type="text" name="email" value="">
+          <label id="label_email" for="email">Email</label>
+          <input id="email" type="text" name="email" value="">
         </p>
 
         <p>
-          <label for="pass">Password</label>
-          <input type="text" name="password" value="">
+          <label id="label_password" for="pass">Password</label>
+          <input id="password" type="text" name="password" value="">
         </p>
-        <input type="submit" name="aggiungi" value="Registrati">
+        <input id="login_submit" type="submit" name="aggiungi" value="Invia">
         <p>
 
         </p>

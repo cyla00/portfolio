@@ -21,25 +21,49 @@
 
 /* ############### GENERAL ################ */
 body{
-  background-color: grey;
+  background-image: url("./img/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
 }
 /* ############### INDEX_PRIMARIO ################ */
-#settore_alto{
-  background-color: blue;
+#settore_header{
+  background-color:  rgba(1, 42, 38, 0.7);
   display: grid;
   grid-template-columns: 30% 40% 30%;
   grid-template-rows: 100%;
 }
 #contenitore_titolo{
   text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-#contenitore_titolo h1{
+#home{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 30%;
+  text-align: center;
+}
+#home h1{
+  display: flex;
+  text-align: center;
   margin: auto;
+  color: rgba(1, 15, 15, 0.7);
+  font-family: PierBold;
+  font-size: 2.3vw;
+  letter-spacing: 5px;
 }
-#contenitore_titolo p{
-  margin: 0;
+#home p{
+  display: flex;
+  text-align: center;
+  color: rgba(1, 15, 15, 0.7);
+  letter-spacing: 20px;
+  margin: auto;
+  font-family: PierNorm;
+  font-size: 1vw;
 }
 
 #contenitore_contatti{
@@ -52,15 +76,24 @@ body{
   margin: auto;
 }
 .btn{
+  background-color: rgba(2, 79, 71, 0.5);
   margin: 2vw;
-  background: none;
+  padding: 1%;
   border: none;
-  border-radius: 100%;
+  border-radius: 100px;
   align-items: center;
+  outline: none;
+}
+.btn:hover{
+  background-color: rgba(1, 128, 117, 0.5);
+  transition: 0.2s;
+}
+.btn:active{
+  background-color: rgba(153, 250, 219, 0.5);
 }
 .img_alto{
   display: flex;
-  width: 5vw;
+  width: 3vw;
 }
 #contenitore_utente{
   text-align: center;
@@ -73,4 +106,22 @@ body{
 }
 .cc{
   margin: auto;
+}
+.style_utente{
+  color: rgba(1, 15, 15, 0.7);
+  font-family: Azonix;
+  width: 5vw;
+  height: 2vw;
+  background-color: rgba(2, 79, 71, 0.5);
+  padding: 1%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.style_utente:hover{
+  background-color: rgba(1, 128, 117, 0.5);
+  transition: 0.2s;
+}
+.style_utente:active{
+  background-color: rgba(153, 250, 219, 0.5);
 }
