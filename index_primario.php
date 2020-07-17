@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <?php
+    require("settore_header.php");
+     ?>
 
-    <div id="sezione_alta">
-    </div>
+
+
 
 
 

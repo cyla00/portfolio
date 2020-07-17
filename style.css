@@ -19,11 +19,58 @@
   src: url("./fonts/noir.otf");
 }
 
-/* ############################### */
-/* body{
-  background-image: url("./img/back.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
+/* ############### GENERAL ################ */
+body{
+  background-color: grey;
+  padding: 0;
+  margin: 0;
+}
+/* ############### INDEX_PRIMARIO ################ */
+#settore_alto{
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 100%;
+}
+#contenitore_titolo{
+  text-align: center;
+}
+#contenitore_titolo h1{
+  margin: auto;
+}
+#contenitore_titolo p{
+  margin: 0;
+}
+
+#contenitore_contatti{
+  text-align: center;
+  align-items: center;
+  display: grid;
+}
+.contenitore_btn{
+  display: flex;
+  margin: auto;
+}
+.btn{
+  margin: 2vw;
+  background: none;
+  border: none;
+  border-radius: 100%;
+  align-items: center;
+}
+.img_alto{
+  display: flex;
+  width: 5vw;
+}
+#contenitore_utente{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.utente{
+  display: inline-flex;
+}
+.cc{
+  margin: auto;
+}

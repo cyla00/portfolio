@@ -1,5 +1,6 @@
 
 <?php
+
 require("connex.php");
 
 if(isset($_POST['invia'])){
@@ -22,7 +23,7 @@ if(isset($_POST['invia'])){
   if(!empty($file) and in_array($estensione_img, $consentiti) and $fileSize < 1000000){
 
     $forma_img = "project_blog/" . $fileName;
-    $push = "INSERT INTO blog(id, titolo, img, descrizione, tecnologie) VALUES (null, '$titolo', '$forma_img', '$descrizione', '$tecnologie')";
+    $push = "INSERT INTO blog_portfolio (id, titolo, img, descrizione, tecnologie) VALUES (null, '$titolo', '$forma_img', '$descrizione', '$tecnologie')";
 
     if($connessione->query($push) === TRUE){
       $message = "push riuscito in: " . $db;
