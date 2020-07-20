@@ -68,7 +68,7 @@
 
         <p>
           <label id="label_password" for="pass">Password</label>
-          <input id="password" type="text" name="password" value="">
+          <input id="password" type="password" name="password" value="">
         </p>
         <input id="login_submit" type="submit" name="aggiungi" value="Invia">
         <p>
