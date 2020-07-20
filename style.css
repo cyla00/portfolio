@@ -28,6 +28,13 @@ body{
   padding: 0;
   margin: 0;
 }
+/* ############### SETTORE_PRIMARIO ################ */
+#sezione_centrale{
+  
+}
+
+
+
 /* ############### SETTORE_HEADER ################ */
 #settore_header{
   background-color:  rgba(1, 42, 38, 0.7);
@@ -40,6 +47,13 @@ body{
   align-items: center;
   display: flex;
   justify-content: center;
+  cursor: default;
+}
+.logo:hover{
+  color: rgba(153, 250, 219, 0.5);
+  font-size: 3vw;
+  transition: 0.2s;
+  cursor: default;
 }
 #home{
   display: grid;
@@ -87,6 +101,7 @@ body{
 .btn:hover{
   background-color: rgba(1, 128, 117, 0.5);
   transition: 0.2s;
+  cursor: pointer;
 }
 .btn:active{
   background-color: rgba(153, 250, 219, 0.5);
@@ -122,11 +137,32 @@ body{
 .style_utente:hover{
   background-color: rgba(1, 128, 117, 0.5);
   transition: 0.2s;
+  cursor: pointer;
 }
 .style_utente:active{
   background-color: rgba(153, 250, 219, 0.5);
 }
-
+#back{
+  color: rgba(1, 15, 15, 0.7);
+  font-family: Azonix;
+  font-size: 1vw;
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
+  background-color: rgba(2, 79, 71, 0.5);
+  padding: 3%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+#back:hover{
+  background-color: rgba(1, 128, 117, 0.5);
+  transition: 0.2s;
+  cursor: pointer;
+}
+#back:active{
+  background-color: rgba(153, 250, 219, 0.5);
+}
 /* ############### LOGIN ################ */
 #contenitore_login{
   width: 100%;
@@ -176,6 +212,7 @@ body{
 #submit_log:hover{
   background-color: rgba(1, 128, 117, 0.5);
   transition: 0.2s;
+  cursor: pointer;
 }
 #submit_log:active{
   background-color: rgba(153, 250, 219, 0.5);
@@ -270,6 +307,7 @@ body{
 #ins_invia:hover{
   background-color: rgba(1, 128, 117, 0.5);
   transition: 0.2s;
+  cursor: pointer;
 }
 #ins_invia:active{
   background-color: rgba(153, 250, 219, 0.5);
@@ -336,6 +374,7 @@ body{
 #reg_submit:hover{
   background-color: rgba(1, 128, 117, 0.5);
   transition: 0.2s;
+  cursor: pointer;
 }
 #reg_submit:active{
   background-color: rgba(153, 250, 219, 0.5);

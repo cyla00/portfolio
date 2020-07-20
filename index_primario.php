@@ -11,16 +11,16 @@
     require("settore_header.php");
      ?>
 
-
-
-
-
-
     <div id="sezione_centrale">
+      <?php
+      require("connex.php");
+      $pull = "SELECT * FROM blog_portfolio";
 
+
+
+
+       ?>
     </div>
 
-
-    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

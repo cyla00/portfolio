@@ -40,6 +40,6 @@
 
       <div class="vuoto"></div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="scriptLog.js"></script>
   </body>
 </html>
