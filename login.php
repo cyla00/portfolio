@@ -26,11 +26,11 @@
         <form id="form_login" action="login.php" method="post">
           <div class="cont_log">
             <label for="user">Username</label>
-            <input id="log_user" class="inpt" type="text" name="user" value="">
+            <input id="log_user" class="inpt" type="text" name="user" value="" autocomplete="off">
           </div>
           <div class="cont_log">
             <label for="pass">Password</label>
-            <input id="log_pass" class="inpt" type="password" name="pass" value="">
+            <input id="log_pass" class="inpt" type="password" name="pass" value="" autocomplete="off">
           </div>
           <div class="cont_log">
             <input id="submit_log" type="submit" name="login" value="Login">

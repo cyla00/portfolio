@@ -7,35 +7,41 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <?php
+    require("settore_header.php");
+     ?>
 
-
-     <div class="form_inserzione">
-
-       <form class="" action="index_inserzione.php" method="POST" enctype="multipart/form-data">
-         <p>
-           <label for="titolo_blog">||Scegli un titolo||</label>
-           <input id="titolo_blog" type="text" name="titolo_blog" value="">
-         </p>
-         <p>
-           <label for="immagine">||Aggiungi un immagine del tuo progetto||</label>
-           <input id="immagine" type='file' name='immagine'>
-         </p>
-         <p>
-           <label for="descrizione">||Descrizione||</label>
-           <textarea id="area_descrizione" name="descrizione" rows="8" cols="80"></textarea>
-         </p>
-         <p>
-           <label for="tecnologie">||Tecnologie usate in questo progetto||</label>
-           <input id="tecnologie" type="text" name="tecnologie" value="">
-         </p>
-         <input type="submit" value="rilascia" name="invia">
-         <?php
-         require("push.php");
-          ?>
+     <div id="inserzione">
+       <div class="vuoto"></div>
+       <form action="index_inserzione.php" method="POST" enctype="multipart/form-data">
+         <div id="form_inserzione">
+           <div id="ins_titolo">
+             <label for="titolo_blog">|| Scegli un titolo ||</label>
+             <input class="ins_inpt" id="titolo_blog" type="text" name="titolo_blog" value="" autocomplete="off">
+           </div>
+           <div id="ins_img">
+             <label for="immagine">|| Aggiungi un immagine del tuo progetto ||</label>
+             <input id="immagine" type='file' name='immagine' autocomplete="off">
+           </div>
+           <div id="ins_descrizione">
+             <label for="descrizione">|| Descrizione ||</label>
+             <textarea id="area_descrizione" name="descrizione" rows="8" cols="80" style="resize:none" autocomplete="off"></textarea>
+           </div>
+           <div id="ins_tecnologie">
+             <label for="tecnologie">|| Tecnologie usate in questo progetto ||</label>
+             <input class="ins_inpt" id="tecnologie" type="text" name="tecnologie" value="" autocomplete="off">
+           </div>
+           <div id="ins_submit">
+             <input id="ins_invia" type="submit" value="rilascia" name="invia">
+           </div>
+           <?php
+           require("push.php");
+            ?>
+         </div>
        </form>
-
+       <div class="vuoto"></div>
      </div>
 
-
+     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

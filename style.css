@@ -129,7 +129,6 @@ body{
 
 /* ############### LOGIN ################ */
 #contenitore_login{
-
   width: 100%;
   height: 100%;
   margin-top: 9vw;
@@ -179,5 +178,165 @@ body{
   transition: 0.2s;
 }
 #submit_log:active{
+  background-color: rgba(153, 250, 219, 0.5);
+}
+
+/* ############### INSERZIONE ################ */
+#inserzione{
+  color: rgba(1, 15, 15, 0.7);
+  width: 100%;
+  height: 100%;
+  margin-top: 9vw;
+  margin-bottom: 9vw;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 30% 40% 30%;
+}
+#form_inserzione{
+  background-color: rgba(2, 79, 71, 0.5);
+  border-radius: 10px;
+  padding: 3%;
+}
+#ins_titolo{
+  text-align: center;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-bottom: 5vw;
+  font-family: NoirMed;
+  font-size: 2vw;
+}
+#ins_img{
+  text-align: center;
+  font-family: NoirMed;
+  font-size: 1vw;
+  margin-bottom: 5vw;
+}
+#ins_descrizione{
+  text-align: center;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  font-family: NoirMed;
+  font-size: 1vw;
+  margin-bottom: 5vw;
+}
+#ins_tecnologie{
+  text-align: center;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  font-family: NoirMed;
+  font-size: 1vw;
+  margin-bottom: 5vw;
+}
+#ins_submit{
+  display: flex;
+  justify-content: center;
+}
+
+.ins_inpt{
+  color: #00e673;
+  text-align: center;
+  outline: none;
+  height: 3vw;
+  outline: none;
+  background-color: rgba(153, 250, 219, 0.2);
+  border: none;
+  border-bottom: 2px solid rgba(1, 15, 15, 0.7);
+  font-size: 1.8vw;
+  font-family: NoirMed;
+  overflow: none;
+}
+#area_descrizione{
+  color: #001a0d;
+  outline: none;
+  height: 20vw;
+  outline: none;
+  background-color: rgba(153, 250, 219, 0.2);
+  border: none;
+  border-bottom: 2px solid rgba(1, 15, 15, 0.7);
+  font-size: 1.4vw;
+  font-family: NoirMed;
+  overflow: none;
+}
+#ins_invia{
+  font-size: 1.5vw;
+  font-family: Azonix;
+  color: rgba(1, 15, 15, 0.7);
+  padding: 2%;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  outline: none;
+}
+#ins_invia:hover{
+  background-color: rgba(1, 128, 117, 0.5);
+  transition: 0.2s;
+}
+#ins_invia:active{
+  background-color: rgba(153, 250, 219, 0.5);
+}
+
+/* ############### REGISTER ################ */
+#titolo_register{
+  text-align: center;
+  font-size: 1vw;
+  font-family: Azonix;
+  color: rgba(1, 15, 15, 0.7);
+  margin-bottom: 1vw;
+}
+#form_registrazione{
+  color: rgba(1, 15, 15, 0.7);
+  font-size: 1.5vw;
+  font-family: Azonix;
+  width: 100%;
+  height: 100%;
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 30% 40% 30%;
+}
+#container_registrazione{
+  background-color: rgba(2, 79, 71, 0.5);
+  border-radius: 10px;
+  padding: 3%;
+  text-align: center;
+}
+.reg_inpt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Azonix;
+  font-size: 1.5vw;
+  color: #99fadb;
+  padding: 3%;
+}
+.reg_innerform{
+  width: 40%;
+  height: 3vw;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(1, 15, 15, 0.7);
+  font-size: 1vw;
+  font-family: NoirMed;
+  overflow: none;
+  text-align: center;
+}
+#reg_submit{
+  font-size: 1.5vw;
+  font-family: Azonix;
+  color: rgba(1, 15, 15, 0.7);
+  padding: 2%;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  outline: none;
+}
+#reg_submit:hover{
+  background-color: rgba(1, 128, 117, 0.5);
+  transition: 0.2s;
+}
+#reg_submit:active{
   background-color: rgba(153, 250, 219, 0.5);
 }
