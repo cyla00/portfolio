@@ -30,10 +30,54 @@ body{
 }
 /* ############### SETTORE_PRIMARIO ################ */
 #sezione_centrale{
-  
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin-top: 1vw;
+  overflow: hidden;
 }
-
-
+#wrap{
+  display: table-column;
+}
+#primario_wrap{
+  text-align: center;
+  background-color: rgba(1, 42, 38, 0.7);
+  padding: 2%;
+  margin: 1vw;
+  overflow: hidden;
+}
+#titolo_primario{
+  font-size: 1.5vw;
+  font-family: Azonix;
+  color: rgba(1, 15, 15, 0.7);
+  margin-bottom: 1vw;
+}
+#img_primario{
+  width: 50vw;
+  margin: auto;
+}
+#p_primario{
+  font-size: 0.8vw;
+  font-family: Azonix;
+  color: rgba(1, 15, 15, 0.7);
+}
+#btn_primario{
+  font-size: 1.5vw;
+  font-family: Azonix;
+  color: rgba(1, 15, 15, 0.7);
+  padding: 2%;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  outline: none;
+}
+#btn_primario:hover{
+  background-color: rgba(1, 128, 117, 0.5);
+  transition: 0.2s;
+  cursor: pointer;
+}
+#btn_primario:active{
+  background-color: rgba(153, 250, 219, 0.5);
+}
 
 /* ############### SETTORE_HEADER ################ */
 #settore_header{
@@ -142,7 +186,7 @@ body{
 .style_utente:active{
   background-color: rgba(153, 250, 219, 0.5);
 }
-#back{
+.back{
   color: rgba(1, 15, 15, 0.7);
   font-family: Azonix;
   font-size: 1vw;
@@ -155,12 +199,12 @@ body{
   border-radius: 10px;
   outline: none;
 }
-#back:hover{
+.back:hover{
   background-color: rgba(1, 128, 117, 0.5);
   transition: 0.2s;
   cursor: pointer;
 }
-#back:active{
+.back:active{
   background-color: rgba(153, 250, 219, 0.5);
 }
 /* ############### LOGIN ################ */

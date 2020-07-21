@@ -44,7 +44,10 @@
           </div>
         </form>
         <form action="index_primario.php" method="post">
-          <input id="back" type="submit" name="home" value="H">
+          <input class="back" type="submit" name="home" value="H">
+        </form>
+        <form action="index_inserzione.php" method="post">
+          <input class="back" type="submit" name="add" value="+">
         </form>
       </div>
     </div>
