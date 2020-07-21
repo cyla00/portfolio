@@ -33,12 +33,13 @@
   background-color: rgba(0,0,0, 0.8);
 }
 .modal-content {
-  background-color: rgba(153, 250, 219, 0.7);
+  background-color: rgba(51, 255, 187, 0.7);
   margin: auto;
   margin-top: 3vw;
   padding: 5%;
   border: 1px solid #888;
   width: 30vw;
+  height: auto;
   border: 1px solid rgba(0,0,0, 0.8);
   font-size: 1vw;
   text-align: center;
@@ -48,6 +49,50 @@
 }
 .modal-content img{
   width: 15vw;
+}
+.modal-content form{
+  display: flex;
+ flex-direction: column;
+}
+.mailfrm{
+  margin-bottom: 0.5vw;
+  font-size: 1.3vw;
+  font-family: NoirMed;
+  color: rgba(1, 15, 15, 0.7);
+  background-color: rgba(153, 250, 219, 0.2);
+  border: none;
+  border-bottom: 2px solid rgba(1, 15, 15, 0.7);
+  outline: none;
+  text-align: center;
+}
+#mailfrmtxt{
+  height: 20vw;
+  margin-bottom: 0.5vw;
+  font-size: 1.3vw;
+  font-family: NoirMed;
+  color: rgba(1, 15, 15, 0.7);
+  background-color: rgba(153, 250, 219, 0.2);
+  border: none;
+  border-bottom: 2px solid rgba(1, 15, 15, 0.7);
+  outline: none;
+}
+#mailinv{
+  font-size: 1.5vw;
+  font-family: Azonix;
+  color: rgba(1, 15, 15, 0.7);
+  padding: 2%;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  outline: none;
+}
+#mailinv:hover{
+  background-color: rgba(1, 128, 117, 0.5);
+  transition: 0.2s;
+  cursor: pointer;
+}
+#mailinv:active{
+  background-color: rgba(153, 250, 219, 0.5);
 }
 .modal-content img{
   border: 4px solid rgba(0,0,0, 0.8);

@@ -23,7 +23,6 @@
   <div id="contenitore_contatti">
     <div class="contenitore_btn">
         <button class="btn" type="button" name="button" onclick="document.getElementById('gitmodal').style.display='block'"><img class="img_alto" src="./img/github.png" alt="github" id="github" onclick="pop()"></button>
-
         <div id="gitmodal" class="modal">
           <div class="modal-content">
             <span class="close" onclick="document.getElementById('gitmodal').style.display='none'">&times;</span>
@@ -34,7 +33,6 @@
         </div>
 
         <button class="btn" type="button" name="button" onclick="document.getElementById('linkmodal').style.display='block'"><img class="img_alto" src="./img/linkedin.png" alt="linkedin" id="linkedin"></button>
-
         <div id="linkmodal" class="modal">
           <div class="modal-content">
             <span class="close" onclick="document.getElementById('linkmodal').style.display='none'">&times;</span>
@@ -45,14 +43,16 @@
         </div>
 
         <button class="btn" type="button" name="button" onclick="document.getElementById('mailmodal').style.display='block'"><img class="img_alto" src="./img/email.png" alt="email" id="email"></button>
-
         <div id="mailmodal" class="modal">
           <div class="modal-content">
             <span class="close" onclick="document.getElementById('mailmodal').style.display='none'">&times;</span>
             <form class="" action="" method="post">
-              <input type="text" name="namo" value="nome">
-              <input type="text" name="namo" value="email">
-              <textarea name="contenuto" style="resize: none"></textarea>
+              <label for="nome">nome</label>
+              <input class="mailfrm" type="text" name="nome" value="">
+              <label for="mail">e-mail</label>
+              <input class="mailfrm" type="text" name="mail" value="">
+              <textarea id="mailfrmtxt" name="contenuto" style="resize: none"></textarea>
+              <input id="mailinv" type="submit" name="mailfrm_sub" value="invia">
             </form>
           </div>
         </div>

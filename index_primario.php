@@ -33,6 +33,6 @@
 
        <div class="vuoto"></div>
     </div>
-
+<script src="primBlog.js" charset="utf-8"></script>
   </body>
 </html>
