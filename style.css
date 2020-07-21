@@ -19,6 +19,53 @@
   src: url("./fonts/noir.otf");
 }
 
+/* ############### MODAL ################ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.8);
+}
+.modal-content {
+  background-color: rgba(153, 250, 219, 0.7);
+  margin: auto;
+  margin-top: 3vw;
+  padding: 5%;
+  border: 1px solid #888;
+  width: 30vw;
+  border: 1px solid rgba(0,0,0, 0.8);
+  font-size: 1vw;
+  text-align: center;
+  font-family: NoirMed;
+  color: rgba(1, 15, 15, 0.7);
+  border-radius: 5vw;
+}
+.modal-content img{
+  width: 15vw;
+}
+.modal-content img{
+  border: 4px solid rgba(0,0,0, 0.8);
+}
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* ############### GENERAL ################ */
 body{
   background-image: url("./img/back.jpg");
@@ -32,11 +79,14 @@ body{
 #sezione_centrale{
   display: grid;
   grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 39vw;
+  height: 100%;
   margin-top: 1vw;
   overflow: hidden;
 }
 #wrap{
   display: table-column;
+  overflow: hidden;
 }
 #primario_wrap{
   text-align: center;
@@ -267,8 +317,8 @@ body{
   color: rgba(1, 15, 15, 0.7);
   width: 100%;
   height: 100%;
-  margin-top: 9vw;
-  margin-bottom: 9vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 30% 40% 30%;

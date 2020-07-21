@@ -11,11 +11,12 @@
     require("settore_header.php");
     require("connex.php");
 
-    $pull = $connessione->query("SELECT * FROM blog_portfolio WHERE id=1");
+    $curid = get_queried_object_id();
+    $pull = $connessione->query("SELECT * FROM blog_portfolio WHERE id=$curid");
 
     while($row = $pull->fetch_assoc()){
       echo "<div id='blog_wrap'>";
-      echo $row['titolo'];
+      print_r ($row);
       echo "</div>";
     }
      ?>

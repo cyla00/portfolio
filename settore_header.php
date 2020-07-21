@@ -22,9 +22,41 @@
 
   <div id="contenitore_contatti">
     <div class="contenitore_btn">
-        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/github.png" alt="github" id="github" onclick="pop()"></button>
-        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/linkedin.png" alt="linkedin" id="linkedin"></button>
-        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/email.png" alt="email" id="email"></button>
+        <button class="btn" type="button" name="button" onclick="document.getElementById('gitmodal').style.display='block'"><img class="img_alto" src="./img/github.png" alt="github" id="github" onclick="pop()"></button>
+
+        <div id="gitmodal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="document.getElementById('gitmodal').style.display='none'">&times;</span>
+            <h3>Add me on GitHub!</h3>
+            <img src="./img/gitq.png" alt="">
+            <p>https://github.com/cyla00</p>
+          </div>
+        </div>
+
+        <button class="btn" type="button" name="button" onclick="document.getElementById('linkmodal').style.display='block'"><img class="img_alto" src="./img/linkedin.png" alt="linkedin" id="linkedin"></button>
+
+        <div id="linkmodal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="document.getElementById('linkmodal').style.display='none'">&times;</span>
+            <h3>Add me on Linkedin!</h3>
+            <img src="./img/link.png" alt="">
+            <p>https://www.linkedin.com/in/ismail-khayam/</p>
+          </div>
+        </div>
+
+        <button class="btn" type="button" name="button" onclick="document.getElementById('mailmodal').style.display='block'"><img class="img_alto" src="./img/email.png" alt="email" id="email"></button>
+
+        <div id="mailmodal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="document.getElementById('mailmodal').style.display='none'">&times;</span>
+            <form class="" action="" method="post">
+              <input type="text" name="namo" value="nome">
+              <input type="text" name="namo" value="email">
+              <textarea name="contenuto" style="resize: none"></textarea>
+            </form>
+          </div>
+        </div>
+
     </div>
   </div>
 
