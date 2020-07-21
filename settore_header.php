@@ -22,9 +22,9 @@
 
   <div id="contenitore_contatti">
     <div class="contenitore_btn">
-        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/github.png" alt="github"></button>
-        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/linkedin.png" alt="linkedin"></button>
-        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/email.png" alt="email"></button>
+        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/github.png" alt="github" id="github" onclick="pop()"></button>
+        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/linkedin.png" alt="linkedin" id="linkedin"></button>
+        <button class="btn" type="button" name="button"><img class="img_alto" src="./img/email.png" alt="email" id="email"></button>
     </div>
   </div>
 
@@ -52,4 +52,5 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="headercont.js"></script>
 </header>

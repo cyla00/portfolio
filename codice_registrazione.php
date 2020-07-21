@@ -10,7 +10,7 @@ if(isset($_POST['aggiungi'])){
 
 
   $negazioni_nome = preg_match('/[^a-zA-Z\d]/', $nome);
-  $negazione_password = strlen($password) < 7;
+  $negazione_password = strlen($password) < 8;
 
 
   if($negazioni_nome){
