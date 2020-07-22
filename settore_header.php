@@ -84,5 +84,4 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="headercont.js"></script>
 </header>

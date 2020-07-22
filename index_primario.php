@@ -23,16 +23,16 @@
           echo "<h1 id='titolo_primario'>" . $row['titolo'] . "</h1>";
           echo "<img id='img_primario' src='{$row['img']}'>";
           echo "<p id='p_primario'>" . $row['id'] . "</p>";
-          echo "<form action='index_blog.php'>";
+          echo "<form action='index_blog.php?={$row['id']}'>";
           echo "<input id='btn_primario' type='submit' name='submit' value='show more'>";
           echo "</form>";
           echo "</div>";
         }
-         ?>
+        ?>
       </div>
 
        <div class="vuoto"></div>
     </div>
-<script src="primBlog.js" charset="utf-8"></script>
+    <script src="primBlog.js" charset="utf-8"></script>
   </body>
 </html>

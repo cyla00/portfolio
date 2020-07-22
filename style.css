@@ -124,10 +124,9 @@ body{
 #sezione_centrale{
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 39vw;
+  grid-template-rows: 100%;
   height: 100%;
   margin-top: 1vw;
-  overflow: hidden;
 }
 #wrap{
   display: table-column;
@@ -138,7 +137,7 @@ body{
   background-color: rgba(1, 42, 38, 0.7);
   padding: 2%;
   margin: 1vw;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #titolo_primario{
   font-size: 1.5vw;
