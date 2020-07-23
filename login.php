@@ -15,7 +15,15 @@
     require('connex.php');
 
     if(isset($_POST['login'])){
-
+      $loguser = $_POST['user'];
+      $logpass = $_POST['pass'];
+      $check = $connessione->query("SELECT user, pass FROM login WHERE user=? pass=?");
+      if(mysql_num_rows($check) == 0){
+        echo "account non esistente";
+      }
+      else{
+        header("Location: ../portafoglio/index_primario.php");
+      }
     }
      ?>
 
