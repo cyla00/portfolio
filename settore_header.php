@@ -47,10 +47,19 @@
           <div class="modal-content">
             <span class="close" onclick="document.getElementById('mailmodal').style.display='none'">&times;</span>
             <form class="" action="" method="post">
-              <label for="nome">nome</label>
-              <input class="mailfrm" type="text" name="nome" value="">
-              <label for="mail">e-mail</label>
+              <?php
+              if(isset($invia)){
+                $mail_dest = "i.khayam@codeur.online";
+                $mail_user = $_POST['mail'];
+                $soggetto = $_POST['soggetto'];
+                $contenuto = $_POST['contenuto'];
+                $invia = $_POST['mailfrm_sub'];
+              }
+               ?>
+              <label for="nome">E-mail</label>
               <input class="mailfrm" type="text" name="mail" value="">
+              <label for="mail">Soggetto</label>
+              <input class="mailfrm" type="text" name="soggetto" value="">
               <textarea id="mailfrmtxt" name="contenuto" style="resize: none"></textarea>
               <input id="mailinv" type="submit" name="mailfrm_sub" value="invia">
             </form>
